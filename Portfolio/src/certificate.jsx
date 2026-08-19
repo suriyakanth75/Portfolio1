@@ -1,6 +1,7 @@
 import './App'
 import { useLocation, useNavigate } from "react-router-dom";
 import {FaEnvelope, FaGithub,FaGraduationCap,FaLinkedin,FaMapMarkerAlt,FaPaperPlane,FaEye} from "react-icons/fa";
+import Certificate1 from './src/assets/certificate1.png'
 function Certificate(){
     const navigate=useNavigate();
     const location=useLocation();
@@ -27,7 +28,7 @@ function Certificate(){
             </div>
             <div className="cerdemo">
                 <div className="cercard">
-                    <div className="cerimg"><img src="src/assets/certificate1.png" alt="" /></div>
+                    <div className="cerimg"><img src={Certificate1} alt="" /></div>
                     <h2>HTML</h2>
                     <h3>Infosys SpringBoard</h3>
                     <div className="cerbtn">
