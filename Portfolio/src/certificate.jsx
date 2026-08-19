@@ -1,7 +1,16 @@
-import './App'
+import './App.css'
 import { useLocation, useNavigate } from "react-router-dom";
 import {FaEnvelope, FaGithub,FaGraduationCap,FaLinkedin,FaMapMarkerAlt,FaPaperPlane,FaEye} from "react-icons/fa";
-import Certificate1 from './src/assets/certificate1.png'
+import Certificate1 from './assets/certificate1.png'
+import Certificate2 from './assets/certificate2.png'
+import Certificate3 from './assets/certificate3.png'
+import Certificate4 from './assets/certificate4.png'
+import Certificate5 from './assets/certificate5.png'
+import HtmlCertificate from './assets/html certificate.pdf'
+import CssCertificate from './assets/css certificate.pdf'
+import OopsCertificate from './assets/oops certificate.pdf'
+import FsdCertificate from './assets/fsd certificate.pdf'
+import HackathonCertificate from './assets/hackathon.pdf'
 function Certificate(){
     const navigate=useNavigate();
     const location=useLocation();
@@ -32,42 +41,42 @@ function Certificate(){
                     <h2>HTML</h2>
                     <h3>Infosys SpringBoard</h3>
                     <div className="cerbtn">
-                        <a href="src/assets/html certificate.pdf" target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
+                        <a href={HtmlCertificate} target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
                     </div>
                 </div>
                 <div className="cercard">
-                    <div className="cerimg"><img src="src/assets/certificate2.png" alt="" /></div>
+                    <div className="cerimg"><img src={Certificate2} alt="" /></div>
                     <h2>CSS</h2>
                     <h3>Infosys SpringBoard</h3>
                     <div className="cerbtn">
-                        <a href="src/assets/css certificate.pdf" target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
+                        <a href={CssCertificate} target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
                     </div>
                 </div>
                 <div className="cercard">
-                    <div className="cerimg"><img src="src/assets/certificate3.png" alt="" /></div>
+                    <div className="cerimg"><img src={Certificate3} alt="" /></div>
                     <h2>OOPs in JAVA</h2>
                     <h3>Simplilearn</h3>
                     <div className="cerbtn">
-                        <a href="src/assets/oops certificate.pdf" target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
+                        <a href={OopsCertificate} target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
                     </div>
                 </div>
                 
             </div>
             <div className="cerdemo">
                 <div className="cercard">
-                    <div className="cerimg"><img src="src/assets/certificate4.png" alt="" /></div>
+                    <div className="cerimg"><img src={Certificate4} alt="" /></div>
                     <h2>Full Stack Developer</h2>
                     <h3>Simplilearn</h3>
                     <div className="cerbtn">
-                        <a href="src/assets/fsd certificate.pdf" target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
+                        <a href={FsdCertificate} target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
                     </div>
                 </div>
                 <div className="cercard">
-                    <div className="cerimg"><img src="src/assets/certificate5.png" alt="" /></div>
+                    <div className="cerimg"><img src={Certificate5} alt="" /></div>
                     <h2>Hackathon</h2>
                     <h3>Sathyabama Institution</h3>
                     <div className="cerbtn">
-                        <a href="src/assets/hackathon.pdf" target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
+                        <a href={HackathonCertificate} target="_blank" rel="noopener noreferrer" ><button>View Certificate<FaEye /></button></a>
                     </div>
                 </div>
             </div>
