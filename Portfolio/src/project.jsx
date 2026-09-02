@@ -62,7 +62,7 @@ function Project() {
             <div className='navdemo'>
                 <div className="navimg"><img src={ecom} alt="" /></div>
                 <p>A desktop-based e-commerce management application developed using
-                  Java, JDBC, and MySQL for managing products, customers, shopping carts, and orders.</p>
+                  Java, JDBC, and MySQL for managing products, customers</p>
                 <div className='probtn'>
                   <div><button>GitHub</button></div>
                   <div><button>Live Demo <FaArrowRight/></button></div>
